@@ -5,10 +5,10 @@
   [//]: # (<img src="https://user-images.githubusercontent.com/45585937/52410651-fa95b900-2b13-11e9-970e-eff9afd83b23.png" alt="alt text" width="400" height="whatever">)
 
 
-Tous les fichier doivent tous etre deposer dans le le repertoire suivant ```C:\Windows\SCRIPT_AYOUB_BELBACHIR``` on peut toujour modifier les variables de chemin, mais s'est plus pratique de les metre tous là-Bas. Pour une meilleure expérience d’immersion je conseille aussi activer le son.
+Tous les fichiers doivent tous être déposés dans le répertoire suivant ```C:\Windows\SCRIPT_AYOUB_BELBACHIR``` . Pour une meilleure expérience d’immersion je vous conseille aussi activer le son.
 
 
-internet et conseiller pour le script 3, j'installe un gestionnaire de paquets pour Windows ```CHOCO``` et un module complementaire telle que [BurntToast](https://github.com/Windos/BurntToast) pour afficher des notification popup perssonaliser  
+internet et conseiller pour le script 3, j'installe un gestionnaire de paquets pour Windows ```CHOCO``` et un module complementaire telle que [BurntToast](https://github.com/Windos/BurntToast) pour afficher des notification popup perssonaliser 
 
 # Les etapes à suivre 
 
