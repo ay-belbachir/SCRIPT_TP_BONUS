@@ -12,7 +12,7 @@ if([ADSI]::Exists("LDAP://$parentOU")) {
         Write-Host  -ForegroundColor GREEN "Filliale existe"            
                                             }
 else {            
-        Write-Host  -ForegroundColor RED "FILLIAL n'existe pas,Ne t'inquiète pas je m'occupe de les créer pour toi."   
+        Write-Host  -ForegroundColor CYAN "FILLIAL n'existe pas,Ne t'inquiète pas je m'occupe de les créer pour toi."   
         New-ADOrganizationalUnit -Name FILLIALE -Path "DC=AYOUB,DC=local"
             }     
  
@@ -27,7 +27,7 @@ else {
         Write-Host  -ForegroundColor GREEN "IT existe "            
                                             }
 else {            
-        Write-Host  -ForegroundColor RED "SUPPORT n'existe pas,Ne t'inquiète pas je m'occupe de les créer pour toi."   
+        Write-Host  -ForegroundColor CYAN "SUPPORT n'existe pas,Ne t'inquiète pas je m'occupe de les créer pour toi."   
         New-ADOrganizationalUnit -Name SUPPORT -Path "OU=FILLIALE,DC=AYOUB,DC=local"
            
         }           
