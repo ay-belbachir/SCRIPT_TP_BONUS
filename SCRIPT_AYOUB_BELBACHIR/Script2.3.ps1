@@ -6,6 +6,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco install BurntToast-psmodule -y
     #instalation de l'AD et de la foret
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools 
+Install-WindowsFeature DNS -IncludeManagementTools
 Install-ADDSForest  `
     -CreateDnsDelegation:$false `
     -DatabasePath "C:\Windows\NTDS" `
