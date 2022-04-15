@@ -1,6 +1,4 @@
-﻿
 $parentOU = 'OU=FILLIALE,DC=AYOUB,DC=local'
-
 $IT       = 'OU=IT,OU=FILLIALE,DC=AYOUB,DC=local'
 $SUPPORT = 'OU=SUPPORT,OU=FILLIALE,DC=AYOUB,DC=local'
 Write-Host -ForegroundColor Green "Vérifions si les Unités d'organisation existe"
