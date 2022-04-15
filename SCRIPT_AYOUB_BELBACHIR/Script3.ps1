@@ -5,7 +5,7 @@ Write-Host -ForegroundColor Green "Vérifions si les Unités d'organisation exis
 New-ADGroup -Name "portalcaptif" -GroupScope Global -Path "CN=Users,DC=AYOUB,DC=local"
                     # Vérifions si les Unités d'organisation existe si non créons les
          
-if([ADSI]::Exists("LDAP://$parentOU")) {            
+    if([ADSI]::Exists("LDAP://$parentOU")) {            
         Write-Host  -ForegroundColor GREEN "Filliale existe"            
                                             }
 else {            
