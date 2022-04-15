@@ -32,9 +32,6 @@ foreach ($User in $ecchi)
                    }
 		   
 
-		   #pour RADIUS   
-Install-WindowsFeature NPAS -IncludeManagementTools
-
 #scripte 4 le trie et la creation de du group pour le portail captif
 
  $Usercsv  = (Get-ADUser $Username).distinguishedName
