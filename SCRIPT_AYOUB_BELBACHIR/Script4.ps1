@@ -36,7 +36,7 @@ foreach ($User in $ecchi)
 Install-WindowsFeature NPAS -IncludeManagementTools
 
 #scripte 4 le trie et la creation de du group pour le portail captif
-New-ADGroup -Name "portalcaptif" -GroupScope Global -Path "CN=Users,DC=AYOUB,DC=local"
+
  $Usercsv  = (Get-ADUser $Username).distinguishedName
 #la variable recuperer les SamAccountName directement sous format cn=Username,ou=informatique,dc=it-connect,dc=local sans ça on obtient une erreur lors du déplacement de l'objet $Username vers un Ou
 
