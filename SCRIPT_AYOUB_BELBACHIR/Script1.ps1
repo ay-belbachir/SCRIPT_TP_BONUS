@@ -1,15 +1,15 @@
 ﻿#Adresse ip en static
 $ip = "192.168.2.2"
 $prefix = "24"
-$GW = "192.168.2.1"
-$DNS = "8.8.8.8"
+$GW = "192.168.2.1" 
+$DNS = "8.8.8.8" #temporaire pour telecharger les addon du script 2 il sera remplacé par 127.0.0.1 lors de l'instalinstion de l'active directory
 
 $adapter = (Get-NetAdapter).ifIndex
 New-NetIPAddress -IPAddress $ip -PrefixLength $prefix `
 -InterfaceIndex $adapter -DefaultGateway $GW
 Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –ServerAddresses $DNS
 
-#le script demande a l'utilisateur de saisire un nom pour l'ordinateur si 'non' le pc est est nomer par default il verifie aussi si le nom par defaut ou le nom saisie est deja utiliser
+#demande a l'utilisateur de saisire un nom pour l'ordinateur si 'non' le pc est est nommé par default, il verifie aussi si le nom par defaut ou le nom saisie est deja utiliser pour eviter de redemarer inutilement
 $myhost = [System.Net.Dns]::GetHostName()
 $demande = Read-Host -Prompt 'saisir saisiser le nom du pc ? o/n '
 
