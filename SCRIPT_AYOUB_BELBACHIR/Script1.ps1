@@ -11,7 +11,7 @@ Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –
 
 #demande a l'utilisateur de saisire un nom pour l'ordinateur si 'non' le pc est est nommé par default, il verifie aussi si le nom par defaut ou le nom saisie est deja utiliser pour eviter de redemarer inutilement
 $myhost = [System.Net.Dns]::GetHostName()
-$demande = Read-Host -Prompt 'saisiser le nom du pc ? o/n '
+$demande = Read-Host -Prompt ''saisissez le nom du pc ? o/n '
 
 $defauthostn = 'AyoubAD'
 
