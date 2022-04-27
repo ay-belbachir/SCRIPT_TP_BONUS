@@ -1,7 +1,7 @@
 ﻿#Adresse ip en static
 $ip = "192.168.2.2"
 $prefix = "24"
-$GW = "192.168.2.1" 
+$GW = "192.168.100.1" 
 $DNS = "8.8.8.8" #temporaire pour telecharger les addon du script 2 il sera remplacé par 127.0.0.1 lors de l'instalinstion de l'active directory
 
 $adapter = (Get-NetAdapter).ifIndex
