@@ -1,7 +1,6 @@
 $parentOU = 'OU=FILLIALE,DC=AYOUB,DC=local'
 $IT       = 'OU=IT,OU=FILLIALE,DC=AYOUB,DC=local'
 $SUPPORT = 'OU=SUPPORT,OU=FILLIALE,DC=AYOUB,DC=local'
-$grp= 'portail captif'
 
 Write-Host -ForegroundColor Green "Vérifions si les Unités d'organisation, si non créons les"
                     
