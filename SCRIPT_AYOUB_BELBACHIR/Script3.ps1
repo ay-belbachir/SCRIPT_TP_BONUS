@@ -2,11 +2,8 @@ $parentOU = 'OU=FILLIALE,DC=AYOUB,DC=local'
 $IT       = 'OU=IT,OU=FILLIALE,DC=AYOUB,DC=local'
 $SUPPORT = 'OU=SUPPORT,OU=FILLIALE,DC=AYOUB,DC=local'
 
-Write-Host -ForegroundColor Green "Vérifions si les Unités d'organisation, si non créons les"
-                    
-   
+Write-Host -ForegroundColor Green "Vérifions si les Unités d'organisation, si non créons les"               
    # Vérifions si les Unités d'organisation existe si non créons les
-
     
     if([ADSI]::Exists("LDAP://$parentOU")) {            
         Write-Host  -ForegroundColor GREEN "Filliale existe"            
