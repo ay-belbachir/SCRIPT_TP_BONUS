@@ -33,6 +33,17 @@ internet et conseiller pour le script 3, j'installe un gestionnaire de paquets p
   <details><summary>↓DEVELLOPEZ MOI SVP ↓</summary>
 
 # Une partie du script 1
+	
+Le Script 1 permets : 
+	
+ 
+−	D’attribuer une adresse IP en statique au serveur 
+	
+−	De demander à l’utilisateur de saisir un hostname pour le serveur si non le hostname par défauts seras sélectionner pour renommer le serveur 
+	
+−	Le script vérifié si le hostname saisie est déjà le nom du serveur si c’est le cas l’ordinateur de ne redémarrera pas par ce que s’est inutile
+
+	
 ```
 Adresse ip en static
 $ip = "192.168.1.59"
@@ -58,6 +69,19 @@ switch($demande){
 
 
 # Le script 2
+	
+Le Script 2 permets : 
+	
+	
+−	Installer l’active directory 
+	
+−	Installer le module BurntToast qui permets d’affiche une notification a la fin de l’exécution des scripts 2, 3 et 4.
+	
+−	Installation du gestionnaire de paquet CHOCO nécessaire pur l’installation de BurntToast
+	
+−	Créer une forêt pour L’Active Directory
+	
+
 ```
 #mon mots de passe
 $monmdpad = ConvertTo-SecureString -String "Btssio92" -AsPlainText -Force
@@ -89,6 +113,14 @@ Start-Sleep -s 40
 	
 # Une partie du script 3
 
+Le Script 3 permets : 
+	
+−	De Vérifier si les OUs de l’Arborescence existe 
+	
+−	De créer s’est OUs s’ils n’existent pas 
+
+	
+	
 ```
 $parentOU = 'OU=FILLIALE,DC=AYOUB,DC=local'
 
@@ -109,6 +141,17 @@ else {
 
 
 # Une partie du script 4 
+	
+	
+Le Script 4 permets : 
+	
+−	De créer des utilisateurs depuis un fichier csv s’il n’existe pas
+	
+−	D’attribuer des mots de passe à ces derniers 
+	
+−	De triés l’emplacement des utilisateurs selon leurs ID 
+	
+	
 
 ``` 
 # instructions quelque soit les choix possibles creation des utilisateur
